@@ -16,33 +16,25 @@
 // automatically applied to the <body> element in the app.
 
 .side-header {
-  background-color: rgb(67, 170, 189);
+  background-color:#488aff;
 }
-.profile {
-    // height: 30vw;
-    // width: 30vw;
-    // border: 1px solid #fff;
-    // border-radius: 50%;
-    // display: inline-block;
-    // text-align: center;
-    // margin-left: auto;
-    // margin-right: auto;
 
-    text-align: center;
+.profile {
     margin: 20px 0;
 
     width: 96px;
     height: 96px;
     border-radius: 50%;
 
-    display: inline-block;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-
 }
 
-h2 {
+h3,h6 {
   text-align: center;
 }
