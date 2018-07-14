@@ -14,6 +14,7 @@ import { Tab1Page } from '../pages/tab1/tab1';
 import { Tab2Page } from '../pages/tab2/tab2';
 import { SelectedCommunityPage } from '../pages/selected-community/selected-community';
 import { FollowedCommunityPage } from '../pages/followed-community/followed-community';
+import { ChatDetailsPage } from '../pages/chat-details/chat-details';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { FollowedCommunityPage } from '../pages/followed-community/followed-comm
     Tab1Page,
     Tab2Page,
     SelectedCommunityPage,
-    FollowedCommunityPage
+    FollowedCommunityPage,
+    ChatDetailsPage
   ],
   imports: [
     BrowserModule,
@@ -41,7 +43,8 @@ import { FollowedCommunityPage } from '../pages/followed-community/followed-comm
     Tab1Page,
     Tab2Page,
     SelectedCommunityPage,
-    FollowedCommunityPage
+    FollowedCommunityPage,
+    ChatDetailsPage
   ],
   providers: [
     StatusBar,

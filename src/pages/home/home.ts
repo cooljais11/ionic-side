@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { TabsPage } from '../tabs/tabs';
+import { ChatDetailsPage } from '../chat-details/chat-details';
 
 @Component({
   selector: 'page-home',
@@ -14,5 +15,9 @@ export class HomePage {
 
   detailPage() {
       this.navCtrl.push(TabsPage)
+  }
+
+  chatDetails() {
+    this.navCtrl.push(ChatDetailsPage);
   }
  }

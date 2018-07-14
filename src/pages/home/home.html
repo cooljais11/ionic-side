@@ -24,7 +24,7 @@
 
 
 
-  <ion-card (click)="detailPage()">
+  <ion-card>
     <ion-card-header>
       <ion-row>
         <ion-col col-3>
@@ -55,8 +55,8 @@
 
       <ion-col col-4>
         <button ion-button clear>
-          <ion-icon name="unlock"></ion-icon>
-          <div class="mybutton">Public</div>
+          <ion-icon name="eye"></ion-icon>
+          <div class="mybutton">View</div>
         </button>
       </ion-col>
 
@@ -69,7 +69,7 @@
       </ion-col>
 
       <ion-col col-4>
-        <button ion-button clear>
+        <button ion-button clear (click)="chatDetails()">
           <ion-icon name="chatbubbles"></ion-icon>
           <div class="mybutton">Chat</div>
         </button>
