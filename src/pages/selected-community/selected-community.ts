@@ -2,19 +2,19 @@ import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 
 @Component({
-  selector: 'page-tab2',
-  templateUrl: 'tab2.html',
+  selector: 'page-selected-community',
+  templateUrl: 'selected-community.html',
 })
-export class Tab2Page {
+export class SelectedCommunityPage {
 
-  tabData: any;
+  item: any;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-    this.tabData = this.navParams.data;
+    this.item = navParams.get('item');
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad Tab2Page');
+
   }
 
 }

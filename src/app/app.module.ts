@@ -12,6 +12,7 @@ import { SettingsPage } from '../pages/settings/settings';
 import { TabsPage } from '../pages/tabs/tabs';
 import { Tab1Page } from '../pages/tab1/tab1';
 import { Tab2Page } from '../pages/tab2/tab2';
+import { SelectedCommunityPage } from '../pages/selected-community/selected-community';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { Tab2Page } from '../pages/tab2/tab2';
     SettingsPage,
     TabsPage,
     Tab1Page,
-    Tab2Page
+    Tab2Page,
+    SelectedCommunityPage
   ],
   imports: [
     BrowserModule,
@@ -35,7 +37,8 @@ import { Tab2Page } from '../pages/tab2/tab2';
     SettingsPage,
     TabsPage,
     Tab1Page,
-    Tab2Page
+    Tab2Page,
+    SelectedCommunityPage
   ],
   providers: [
     StatusBar,

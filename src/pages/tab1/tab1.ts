@@ -7,7 +7,10 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class Tab1Page {
 
+  tabData: any;
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.tabData = this.navParams.data;
   }
 
   ionViewDidLoad() {
