@@ -9,13 +9,27 @@
 
 <ion-content>
   <ion-list>
+    <ion-item-group>
+    <ion-item-divider color="secondary">List 1</ion-item-divider>
     <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">
       <ion-icon [name]="item.icon" item-start></ion-icon>
       {{item.title}}
       <div class="item-note" item-end>
         {{item.note}}
       </div>
+      <p>This is community related of Cancer</p>
     </button>
+
+    <ion-item-divider color="secondary">List 2</ion-item-divider>
+    <button ion-item *ngFor="let item of items1" (click)="itemTapped($event, item)">
+      <ion-icon [name]="item.icon" item-start></ion-icon>
+      {{item.title}}
+      <p>I am the item</p>
+      <ion-icon name="arrow-forward" item-end></ion-icon>
+    </button>
+
+
+  </ion-item-group>
   </ion-list>
   <div *ngIf="selectedItem" padding>
     You navigated here from <b>{{selectedItem.title}}</b>

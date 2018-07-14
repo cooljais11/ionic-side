@@ -10,6 +10,7 @@ export class ListPage {
   selectedItem: any;
   icons: string[];
   items: Array<{title: string, note: string, icon: string}>;
+  items1:Array<{title: string, note: string, icon: string}>;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     // If we navigated to this page, we will have an item available as a nav param
@@ -22,10 +23,19 @@ export class ListPage {
     'american-football', 'boat', 'bluetooth', 'build'];
 
     this.items = [];
-    for (let i = 1; i < 11; i++) {
+    for (let i = 1; i < 5; i++) {
       this.items.push({
         title: 'Item ' + i,
-        note: 'This is item #' + i,
+        note: ''+ i,
+        icon: this.icons[Math.floor(Math.random() * this.icons.length)]
+      });
+    }
+
+    this.items1 = [];
+    for (let i = 5; i < 10; i++) {
+      this.items1.push({
+        title: 'Item ' + i,
+        note: 'item #' + i,
         icon: this.icons[Math.floor(Math.random() * this.icons.length)]
       });
     }

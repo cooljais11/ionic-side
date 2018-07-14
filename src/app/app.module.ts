@@ -13,6 +13,7 @@ import { TabsPage } from '../pages/tabs/tabs';
 import { Tab1Page } from '../pages/tab1/tab1';
 import { Tab2Page } from '../pages/tab2/tab2';
 import { SelectedCommunityPage } from '../pages/selected-community/selected-community';
+import { FollowedCommunityPage } from '../pages/followed-community/followed-community';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { SelectedCommunityPage } from '../pages/selected-community/selected-comm
     TabsPage,
     Tab1Page,
     Tab2Page,
-    SelectedCommunityPage
+    SelectedCommunityPage,
+    FollowedCommunityPage
   ],
   imports: [
     BrowserModule,
@@ -38,7 +40,8 @@ import { SelectedCommunityPage } from '../pages/selected-community/selected-comm
     TabsPage,
     Tab1Page,
     Tab2Page,
-    SelectedCommunityPage
+    SelectedCommunityPage,
+    FollowedCommunityPage
   ],
   providers: [
     StatusBar,

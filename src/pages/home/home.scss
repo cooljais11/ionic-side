@@ -1,3 +1,35 @@
 page-home {
 
+  h2 {
+    font-weight: bolder
+  }
+
+  .profile_photo {
+    margin:  0;
+
+    width: 70px;
+    height: 70px;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+ }
+
+ img {
+  border-radius: 50%;
+ }
+
+ .mybutton {
+   margin-left: 5px
+ }
+
+  .userName {
+    font-size: 13px;
+  }
+
+ .date {
+   font-size: 11px;
+   color: grey
+ }
+
 }
