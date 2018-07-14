@@ -6,8 +6,8 @@
         <ion-row>
         <ion-title>My Home</ion-title>
       <button ion-button clear icon-only>
-          <ion-badge *ngIf="not">{{ not }}</ion-badge>
-          <ion-icon name="notifications" ></ion-icon>
+          <ion-badge  *ngIf="not">{{ not }}</ion-badge>
+          <ion-icon name="notifications" [color]="getNotificationColor()"></ion-icon>
       </button>
     </ion-row>
 

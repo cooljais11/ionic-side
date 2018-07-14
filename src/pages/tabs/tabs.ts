@@ -21,4 +21,12 @@ export class TabsPage {
 
   ionViewDidLoad() {
   }
+
+  getNotificationColor() {
+    return 'danger'
+  }
+
+  getNotificationBack() {
+    return 'transparent';
+  }
 }
