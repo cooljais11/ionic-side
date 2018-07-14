@@ -9,10 +9,6 @@
 
 <ion-content>
 
-
-
-
-
   <ion-card>
     <ion-card-header>
       <ion-row>
@@ -49,7 +45,6 @@
         </button>
       </ion-col>
 
-
       <ion-col col-4>
         <button ion-button clear>
           <ion-icon name="share"></ion-icon>
@@ -65,12 +60,13 @@
       </ion-col>
 
     </ion-row>
+
   </ion-card>
 
 
 
 
-  <ion-card (click)="detailPage()">
+  <ion-card>
       <ion-card-header>
         <ion-row>
           <ion-col col-3>
@@ -99,33 +95,32 @@
 
       <ion-row>
 
-        <ion-col col-4>
-          <button ion-button>
-            <ion-icon name="unlock"></ion-icon>
-            <div class="mybutton">Public</div>
-          </button>
-        </ion-col>
+          <ion-col col-4>
+              <button ion-button clear>
+                <ion-icon name="eye"></ion-icon>
+                <div class="mybutton">View</div>
+              </button>
+            </ion-col>
 
+            <ion-col col-4>
+              <button ion-button clear>
+                <ion-icon name="share"></ion-icon>
+                <div class="mybutton">Share</div>
+              </button>
+            </ion-col>
 
-        <ion-col col-4>
-          <button ion-button>
-            <ion-icon name="share"></ion-icon>
-            <div class="mybutton">Share</div>
-          </button>
-        </ion-col>
-
-        <ion-col col-4>
-          <button ion-button>
-            <ion-icon name="chatbubbles"></ion-icon>
-            <div class="mybutton">Chat</div>
-          </button>
-        </ion-col>
+            <ion-col col-4>
+              <button ion-button clear (click)="chatDetails()">
+                <ion-icon name="chatbubbles"></ion-icon>
+                <div class="mybutton">Chat</div>
+              </button>
+            </ion-col>
 
       </ion-row>
     </ion-card>
 
 
-    <ion-card (click)="detailPage()">
+    <ion-card>
         <ion-card-header>
           <ion-row>
             <ion-col col-3>
@@ -153,27 +148,26 @@
 
         <ion-row>
 
-          <ion-col col-4>
-            <button ion-button>
-              <ion-icon name="unlock"></ion-icon>
-              <div class="mybutton">Public</div>
-            </button>
-          </ion-col>
+            <ion-col col-4>
+                <button ion-button clear>
+                  <ion-icon name="eye"></ion-icon>
+                  <div class="mybutton">View</div>
+                </button>
+              </ion-col>
 
+              <ion-col col-4>
+                <button ion-button clear>
+                  <ion-icon name="share"></ion-icon>
+                  <div class="mybutton">Share</div>
+                </button>
+              </ion-col>
 
-          <ion-col col-4>
-            <button ion-button>
-              <ion-icon name="share"></ion-icon>
-              <div class="mybutton">Share</div>
-            </button>
-          </ion-col>
-
-          <ion-col col-4>
-            <button ion-button>
-              <ion-icon name="chatbubbles"></ion-icon>
-              <div class="mybutton">Chat</div>
-            </button>
-          </ion-col>
+              <ion-col col-4>
+                <button ion-button clear (click)="chatDetails()">
+                  <ion-icon name="chatbubbles"></ion-icon>
+                  <div class="mybutton">Chat</div>
+                </button>
+              </ion-col>
 
         </ion-row>
       </ion-card>
