@@ -15,10 +15,9 @@
   <ion-item>
     <ion-label>Date Filter</ion-label>
       <ion-datetime displayFormat="M/D/YYYY" pickerFormat="M/D/YYYY"
-        [(ngModel)]="dateFilter">
-
+        [(ngModel)]="dateFilter" (ionChange)="dateChanged()">
       </ion-datetime>
 
   </ion-item>
-
+  {{changed}}
 </ion-content>
