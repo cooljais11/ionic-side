@@ -1,12 +1,12 @@
 <ion-header>
-    <ion-navbar>
+    <ion-navbar color="primary">
         <button ion-button menuToggle>
             <ion-icon name="menu"></ion-icon>
         </button>
         <ion-row>
         <ion-title>My Home</ion-title>
       <button ion-button clear icon-only>
-          <ion-badge  *ngIf="not">{{ not }}</ion-badge>
+          <ion-badge *ngIf="not">{{ not }}</ion-badge>
           <ion-icon name="notifications" [color]="getNotificationColor()"></ion-icon>
       </button>
     </ion-row>

@@ -27,7 +27,7 @@ export class MyApp {
       { title: 'Community', component: ListPage },
       { title: 'Personal', component: TabsPage },
       { title: 'Settings', component: SettingsPage},
-      { title: 'Log Out', component: TabsPage }
+      { title: 'Register', component: TabsPage }
     ];
 
   }

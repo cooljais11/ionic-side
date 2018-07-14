@@ -7,6 +7,8 @@ import { NavController, NavParams } from 'ionic-angular';
 })
 export class SettingsPage {
 
+  dateFilter: any;
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 

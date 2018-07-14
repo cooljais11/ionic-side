@@ -1,6 +1,6 @@
 <ion-header>
 
-  <ion-navbar>
+  <ion-navbar color="primary">
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
@@ -11,5 +11,14 @@
 
 
 <ion-content padding>
+
+  <ion-item>
+    <ion-label>Date Filter</ion-label>
+      <ion-datetime displayFormat="M/D/YYYY" pickerFormat="M/D/YYYY"
+        [(ngModel)]="dateFilter">
+
+      </ion-datetime>
+
+  </ion-item>
 
 </ion-content>
