@@ -3,13 +3,23 @@
         <button ion-button menuToggle>
             <ion-icon name="menu"></ion-icon>
         </button>
-      <ion-title>My Home</ion-title>
+        <ion-row>
+        <ion-title>My Home</ion-title>
+      <button ion-button clear icon-only>
+          <ion-badge *ngIf="not">{{ not }}</ion-badge>
+          <ion-icon name="notifications" ></ion-icon>
+      </button>
+    </ion-row>
+
     </ion-navbar>
   </ion-header>
 
 <ion-tabs>
-    <ion-tab tabIcon="water" tabTitle="Water" [root]="tab1" [rootParams]="tabData"></ion-tab>
-    <ion-tab tabIcon="leaf" tabTitle="Life" [root]="tab2" [rootParams]="tabData"></ion-tab>
+    <ion-tab tabIcon="people" tabTitle="Forum" [root]="tab2" [rootParams]="tabData"></ion-tab>
+    <ion-tab tabIcon="chatbubbles" tabTitle="Chat" [root]="tab2" [rootParams]="tabData"></ion-tab>
+    <ion-tab tabIcon="document" tabTitle="Docs" [root]="tab2" [rootParams]="tabData"></ion-tab>
+    <ion-tab tabIcon="calendar" tabTitle="Events" [root]="tab1" [rootParams]="tabData"></ion-tab>
+
 </ion-tabs>
 
 

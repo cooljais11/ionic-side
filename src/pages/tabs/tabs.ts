@@ -9,6 +9,7 @@ import { Tab2Page } from '../tab2/tab2';
 })
 export class TabsPage {
 
+  not = 5;
   tabData: any = {};
 
   tab1 = Tab1Page;
@@ -16,11 +17,8 @@ export class TabsPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     this.tabData.data = 'TabData123';
-    console.log(this.tabData)
-    console.log(this.tabData.data)
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad TabsPage');
   }
 }

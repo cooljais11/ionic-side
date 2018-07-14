@@ -1,3 +1,14 @@
 page-tabs {
+  button {
+    ion-badge {
+      position: absolute;
+      top: -0.2rem;
+      right: -0.01rem;
+      opacity: 1.0;
 
+      & ~ ion-icon {
+        margin-right: 0.80rem;
+      }
+    }
+  }
 }
