@@ -7,6 +7,8 @@ import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
 import { SettingsPage } from '../pages/settings/settings';
 import { TabsPage } from '../pages/tabs/tabs';
+import { UserRegistrationProvider } from '../providers/user-registration/user-registration';
+import { RegistrationPage } from '../pages/registration/registration';
 
 @Component({
   templateUrl: 'app.html'
@@ -27,7 +29,7 @@ export class MyApp {
       { title: 'Community', component: ListPage },
       { title: 'Personal', component: TabsPage },
       { title: 'Settings', component: SettingsPage},
-      { title: 'Register', component: TabsPage }
+      { title: 'Register', component: RegistrationPage }
     ];
 
   }
