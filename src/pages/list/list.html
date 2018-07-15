@@ -5,6 +5,11 @@
     </button>
     <ion-title>Community</ion-title>
   </ion-navbar>
+
+  <ion-toolbar>
+    <ion-searchbar placeholder="Search" [(ngModel)]="queryText" (ionInput)="update()">
+    </ion-searchbar>
+  </ion-toolbar>
 </ion-header>
 
 <ion-content>
