@@ -1,14 +1,26 @@
-
 <ion-header>
-  <ion-navbar>
-      <!-- <button ion-button menuToggle>
-            <ion-icon name="menu"></ion-icon>
-      </button>
-    <ion-title>tab1</ion-title> -->
-  </ion-navbar>
+    <ion-navbar no-border-bottom>
+        <ion-title>
+          Segments
+        </ion-title>
+      </ion-navbar>
+
+      <ion-toolbar no-border-top>
+          <ion-segment [(ngModel)]="pet">
+            <ion-segment-button value="puppies">
+              Puppies
+            </ion-segment-button>
+            <ion-segment-button value="kittens">
+              Kittens
+            </ion-segment-button>
+            <ion-segment-button value="ducklings">
+              Ducklings
+            </ion-segment-button>
+          </ion-segment>
+        </ion-toolbar>
 </ion-header>
 
 
 <ion-content padding>
-{{tabData.data}}
+  <!-- {{tabData.data}} -->
 </ion-content>

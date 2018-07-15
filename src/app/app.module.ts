@@ -19,6 +19,7 @@ import { ChatDetailsPage } from '../pages/chat-details/chat-details';
 import { UserRegistrationProvider } from '../providers/user-registration/user-registration';
 import { RegistrationPage } from '../pages/registration/registration';
 import { UserService } from '../providers/user-service/user-service';
+import { JournalPage } from '../pages/journal/journal';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { UserService } from '../providers/user-service/user-service';
     SelectedCommunityPage,
     FollowedCommunityPage,
     ChatDetailsPage,
-    RegistrationPage
+    RegistrationPage,
+    JournalPage
   ],
   imports: [
     BrowserModule,
@@ -51,7 +53,8 @@ import { UserService } from '../providers/user-service/user-service';
     SelectedCommunityPage,
     FollowedCommunityPage,
     ChatDetailsPage,
-    RegistrationPage
+    RegistrationPage,
+    JournalPage
   ],
   providers: [
     StatusBar,
