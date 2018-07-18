@@ -20,6 +20,8 @@ import { UserRegistrationProvider } from '../providers/user-registration/user-re
 import { RegistrationPage } from '../pages/registration/registration';
 import { UserService } from '../providers/user-service/user-service';
 import { JournalPage } from '../pages/journal/journal';
+import { SocialSharing } from '@ionic-native/social-sharing';
+import { SocialSharingMock } from '../pages/home/SocialShareMock';
 
 @NgModule({
   declarations: [
@@ -61,7 +63,8 @@ import { JournalPage } from '../pages/journal/journal';
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     UserRegistrationProvider,
-    UserService
+    UserService,
+    { provide: SocialSharing, useClass: SocialSharingMock }
   ]
 })
 export class AppModule {}

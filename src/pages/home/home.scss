@@ -15,8 +15,15 @@ page-home {
     background-position: center;
  }
 
- img {
+ .profileImg {
   border-radius: 50%;
+ }
+
+ .logo {
+  width: 100px;
+  height: 40px;
+  border-radius: 0;
+  background-color: transparent;
  }
 
  .mybutton {
