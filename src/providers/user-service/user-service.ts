@@ -30,6 +30,26 @@ export class UserService {
 
 
     // console.log("My Games: " + games[0].opponent);
+    // let teamId = '123'
+
+    // let teamStanding = _.find(products.tournaments.standings, { 'teamId': teamId });
+    // this.userSettings.isFavoriteTeam(this.team.id).then(value => this.isFollowing = value);
+
   }
+
+  // favoriteTeam(team, tournamentId, tournamentName) {
+  //   let item = { team: team, tournamentId: tournamentId, tournamentName: tournamentName };
+  //   this.storage.set(team.id, JSON.stringify(item));
+  //   this.events.publish('favorites:changed');
+  // }
+
+  // unfavoriteTeam(team) {
+  //   this.storage.remove(team.id);
+  //   this.events.publish('favorites:changed');
+  // }
+
+  // isFavoriteTeam(teamId) {
+  //   return this.storage.get(teamId).then(value => value ? true : false);
+  // }
 
 }
