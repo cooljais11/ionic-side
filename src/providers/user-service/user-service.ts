@@ -2,6 +2,9 @@ import { Injectable } from '@angular/core';
 
 // import * as products from './elite-data.json';
 
+//import 'rxjs/add/operator/map';
+// import
+
 import * as _ from 'lodash';
 
 @Injectable()
@@ -51,5 +54,25 @@ export class UserService {
   // isFavoriteTeam(teamId) {
   //   return this.storage.get(teamId).then(value => value ? true : false);
   // }
+
+
+  // getTournamentData(tourneyId, forceRefresh: boolean = false) : Observable<any> {
+  //   if (!forceRefresh && this.tourneyData[tourneyId]) {
+  //       this.currentTourney = this.tourneyData[tourneyId];
+  //       console.log('**no need to make HTTP call, just return the data');
+  //       return Observable.of(this.currentTourney);
+  //   }
+
+  //   // don't have data yet
+  //   console.log('**about to make HTTP call');
+  //   return this.http.get(`${this.baseUrl}/tournaments-data/${tourneyId}.json`)
+  //       .map(response => {
+  //           this.tourneyData[tourneyId] = response.json();
+  //           this.currentTourney = this.tourneyData[tourneyId];
+  //           return this.currentTourney;
+  //       });
+  // }
+
+
 
 }
