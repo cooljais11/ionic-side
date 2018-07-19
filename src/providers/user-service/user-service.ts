@@ -55,6 +55,15 @@ export class UserService {
   //   return this.storage.get(teamId).then(value => value ? true : false);
   // }
 
+    //   getAllFavorites(){
+    // let items = [];
+    // this.storage.forEach(data => {
+    //       items.push(JSON.parse(data));
+    //     });
+
+    //     return items;
+// }
+
 
   // getTournamentData(tourneyId, forceRefresh: boolean = false) : Observable<any> {
   //   if (!forceRefresh && this.tourneyData[tourneyId]) {
@@ -72,6 +81,18 @@ export class UserService {
   //           return this.currentTourney;
   //       });
   // }
+
+
+
+
+  //   getAllFavorites(){
+//     let items = [];
+//     _.forIn(window.localStorage, (v, k) => {
+//         items.push(JSON.parse(v));
+//     });
+//     return items.length ? items : null;
+// }
+
 
 
 
