@@ -11,7 +11,7 @@
 <ion-content>
 
   <ion-card>
-    <ion-card-header>
+    <ion-card-header (click)="chatDetails()">
       <ion-row>
         <ion-col col-3>
           <div class="profile_photo">
@@ -27,7 +27,7 @@
         </ion-col>
       </ion-row>
     </ion-card-header>
-    <ion-card-content>
+    <ion-card-content (click)="chatDetails()">
       <p>Welcome to the Leukemia Cancer Group. This is a community group and is intended
         for Blood Cancer patients and their families.
       </p>
@@ -42,7 +42,8 @@
       <ion-col col-4>
         <button ion-button clear>
           <ion-icon name="eye"></ion-icon>
-          <div class="mybutton">View</div>
+          <div class="mybutton" *ngIf="!isFollowing">Follow</div>
+          <div class="mybutton" *ngIf="isFollowing">Following</div>
         </button>
       </ion-col>
 

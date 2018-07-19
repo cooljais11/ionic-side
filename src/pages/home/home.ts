@@ -12,6 +12,8 @@ declare var window: any;
 })
 export class HomePage {
 
+    isFollowing = false;
+
   constructor(public navCtrl: NavController,
     private socialSharing: SocialSharing,
     private alertCtrl: AlertController) {
